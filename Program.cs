@@ -10,10 +10,12 @@ class Program
         while (selectedYear > 0)
         {
             int currentYear = 2026;
-            int divider = 400;
+            int divider1 = 400;
+            int divider2 = 4;
+            int divider3 = 100;
             Console.WriteLine("Veuillez choisir une année (passée ou future).");
             selectedYear =  Convert.ToInt32(Console.ReadLine());
-            if (selectedYear % divider == 0)
+            if (selectedYear % divider1 == 0 || (selectedYear % divider2 == 0 && selectedYear % divider3 != 0) )
             {
                 if (selectedYear > currentYear)
                 {
